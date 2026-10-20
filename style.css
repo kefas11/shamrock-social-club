@@ -798,3 +798,24 @@ html {
         padding: 0 15px;
     }
 }
+/* Studio contact email */
+.footer-email {
+    margin-top: 20px;
+    text-align: center;
+    color: #d4af77;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer-email a {
+    color: #d4af77;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    overflow-wrap: anywhere;
+}
+
+.footer-email a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
