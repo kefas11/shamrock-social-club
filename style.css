@@ -1,0 +1,751 @@
+/* STEP 3: Basic luxury styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #D6BD91;
+    font-size: 18px;
+    letter-spacing: 8px;
+    margin-top: 0;
+}
+
+p {
+    color: #D0D0D0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 35px;
+}
+/* STEP 4: Navigation bar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: -100px -20px 80px;
+    padding: 25px 20px;
+    background-color: #080808;
+    border-bottom: 1px solid #34302A;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D6BD91;
+}
+/* STEP 5: Hero section */
+
+.hero {
+    padding: 50px 20px 100px;
+}
+
+.hero .location {
+    color: #D6BD91;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero .hero-description {
+    color: #D0D0D0;
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin: 25px auto 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 16px 30px;
+    border: 1px solid #D6BD91;
+    color: #D6BD91;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #D6BD91;
+    color: #0B0B0B;
+}
+/* STEP 6: Featured tattoo image */
+
+.featured-art {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+}
+
+.featured-art img {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border: 1px solid #34302A;
+}
+
+.image-caption {
+    color: #D6BD91;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+/* STEP 7: Portfolio section */
+
+.portfolio {
+    padding: 80px 6%;
+    background-color: #111111;
+}
+
+.section-label {
+    color: #D6BD91;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.portfolio h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+.portfolio-description {
+    color: #BBBBBB;
+    line-height: 1.8;
+    margin: 25px auto 45px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    color: #D6BD91;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item img {
+        height: 400px;
+    }
+}
+/* STEP 8: Booking section */
+
+.booking {
+    padding: 100px 20px;
+    background-color: #0B0B0B;
+    border-top: 1px solid #34302A;
+}
+
+.booking h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+.booking-description {
+    color: #BBBBBB;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 35px;
+}
+
+.booking-button {
+    display: inline-block;
+    padding: 16px 30px;
+    border: 1px solid #D6BD91;
+    color: #D6BD91;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #D6BD91;
+    color: #0B0B0B;
+}
+
+@media (max-width: 700px) {
+    .booking h2 {
+        font-size: 25px;
+    }
+}
+/* STEP 9: Shop section */
+
+.shop {
+    padding: 90px 6%;
+    background-color: #111111;
+    border-top: 1px solid #34302A;
+}
+
+.shop h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin: 25px auto;
+}
+
+.shop-description {
+    color: #BBBBBB;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 45px;
+}
+
+.shop-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.shop-item {
+    border: 1px solid #494034;
+    padding: 40px 25px;
+    transition: border-color 0.3s ease;
+}
+
+.shop-item:hover {
+    border-color: #D6BD91;
+}
+
+.shop-item h3 {
+    color: #D6BD91;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.shop-item p {
+    color: #BBBBBB;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 20px 0 30px;
+}
+
+.shop-item a {
+    display: inline-block;
+    color: #D6BD91;
+    text-decoration: none;
+    border: 1px solid #D6BD91;
+    padding: 13px 18px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.shop-item a:hover {
+    background-color: #D6BD91;
+    color: #0B0B0B;
+}
+
+@media (max-width: 700px) {
+    .shop-options {
+        grid-template-columns: 1fr;
+    }
+
+    .shop h2 {
+        font-size: 27px;
+    }
+}
+/* STEP 10: Website footer */
+
+.site-footer {
+    background-color: #080808;
+    border-top: 1px solid #494034;
+    padding: 60px 20px 30px;
+    text-align: center;
+}
+
+.site-footer h2 {
+    color: #FFFFFF;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle {
+    color: #D6BD91;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.footer-tagline {
+    color: #AAAAAA;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.footer-links a:hover {
+    color: #D6BD91;
+}
+
+.footer-whatsapp {
+    display: inline-block;
+    color: #D6BD91;
+    text-decoration: none;
+    border: 1px solid #D6BD91;
+    padding: 14px 22px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.footer-whatsapp:hover {
+    background-color: #D6BD91;
+    color: #080808;
+}
+
+.copyright {
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+/* STEP 12: Responsive design improvements */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 40px 15px;
+    }
+
+    nav {
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: -40px -15px 45px;
+    padding: 20px 15px;
+} 
+
+
+    nav a {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .hero {
+        padding: 35px 10px 65px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+
+    .featured-art img {
+        max-height: 450px;
+    }
+
+    .portfolio {
+        padding: 60px 20px;
+    }
+
+    .booking {
+        padding: 65px 20px;
+    }
+
+    .shop {
+        padding: 65px 20px;
+    }
+
+    .site-footer {
+        padding: 45px 15px 25px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .hero .hero-description {
+        font-size: 14px;
+    }
+
+    .portfolio h2,
+    .shop h2 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .portfolio-item img {
+        height: 320px;
+    }
+
+    .booking h2 {
+        font-size: 23px;
+    }
+
+    .shop-item {
+        padding: 30px 18px;
+    }
+
+    .site-footer h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .footer-links {
+        gap: 16px;
+    }
+}
+/* STEP 14: About the studio */
+
+.about {
+    padding: 80px 25px;
+    background-color: #0B0B0B;
+    border-top: 1px solid #34302A;
+    border-bottom: 1px solid #34302A;
+}
+
+.about h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin: 25px auto;
+}
+
+.about p:not(.section-label) {
+    max-width: 700px;
+    margin: 20px auto;
+    color: #BBBBBB;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 55px 20px;
+    }
+
+    .about h2 {
+        font-size: 25px;
+    }
+}
+/* STEP 16: Luxury typography */
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+}
+
+.hero h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+.portfolio h2,
+.booking h2,
+.shop h2,
+.about h2 {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+/* STEP 17: Premium gold buttons */
+
+.hero a,
+.booking a,
+.shop a {
+    transition: all 0.3s ease;
+}
+
+.hero a:hover,
+.booking a:hover,
+.shop a:hover {
+    background-color: #d6b875;
+    color: #080808;
+    border-color: #d6b875;
+    transform: translateY(-3px);
+}
+/* STEP 18: Premium portfolio cards */
+
+.portfolio .card {
+    border: 1px solid #292929;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.portfolio .card:hover {
+    transform: translateY(-5px);
+    border-color: #c9a96e;
+    box-shadow: 0 10px 25px rgba(201, 169, 110, 0.12);
+}
+/* STEP 19: Portfolio image hover effect */
+
+.portfolio img {
+    transition: transform 0.4s ease;
+}
+
+.portfolio img:hover {
+    transform: scale(1.04);
+}
+/* STEP 20: Smooth section reveal */
+
+.hero,
+.about,
+.portfolio,
+.booking,
+.shop {
+    animation: sectionReveal 0.8s ease both;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* STEP 21: Responsive portfolio layout */
+
+@media (max-width: 768px) {
+    .portfolio .card {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .portfolio img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .about,
+    .portfolio,
+    .booking,
+    .shop {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* STEP 22: Sticky navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #080808;
+}
+/* STEP 23: Floating WhatsApp button */
+
+.floating-whatsapp {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 2000;
+    display: inline-block;
+    padding: 14px 20px;
+    background-color: #c9a96e;
+    color: #080808;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #c9a96e;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    background-color: #080808;
+    color: #c9a96e;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    .floating-whatsapp {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+}
+/* STEP 24: Final booking call to action */
+
+.final-cta {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: #111111;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+.final-cta .cta-label {
+    color: #c9a96e;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.final-cta h2 {
+    color: #f5f1e8;
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.final-cta p:not(.cta-label) {
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 520px;
+    margin: 0 auto 30px;
+}
+
+.final-cta a {
+    display: inline-block;
+    padding: 15px 26px;
+    background-color: #c9a96e;
+    color: #080808;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.final-cta a:hover {
+    background-color: #f5f1e8;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    .final-cta h2 {
+        font-size: 30px;
+    }
+
+    .final-cta {
+        padding: 65px 20px;
+    }
+}
+/* STEP 25: Back to top button */
+
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 85px;
+    z-index: 1500;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    color: #c9a96e;
+    border: 1px solid #c9a96e;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #c9a96e;
+    color: #080808;
+    transform: translateY(-3px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        right: 12px;
+        bottom: 75px;
+    }
+}
