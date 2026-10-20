@@ -648,7 +648,7 @@ nav {
 @media (max-width: 480px) {
     .floating-whatsapp {
         right: 12px;
-        bottom: 12px;
+        bottom: 100px;
         padding: 12px 15px;
         font-size: 12px;
     }
