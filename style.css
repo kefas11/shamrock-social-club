@@ -623,7 +623,7 @@ nav {
 .floating-whatsapp {
     position: fixed;
     right: 24px;
-    bottom: 24px;
+    bottom: 80px;
     z-index: 2000;
     display: inline-block;
     padding: 14px 20px;
