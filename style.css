@@ -716,7 +716,7 @@ nav {
 
 .back-to-top {
     position: fixed;
-    right: 24px;
+    left: 24px;
     bottom: 85px;
     z-index: 1500;
     width: 42px;
